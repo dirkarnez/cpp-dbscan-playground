@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.18)
 
 set(CMAKE_FIND_DEBUG_MODE TRUE)
 
-project("portaudio-playground")
+project("cpp-dbscan-playground")
 
 find_package(portaudio 19 EXACT REQUIRED) # PATHS "P:\\Downloads\\cpp-libraries\\portaudio\\build\\cmake\\portaudio")
 
@@ -13,7 +13,7 @@ else()
 endif()
 
 add_executable(${PROJECT_NAME}
-    "src/main.c"
+    "src/main.cpp"
 )
 
 target_link_libraries(${PROJECT_NAME} portaudio_static)
